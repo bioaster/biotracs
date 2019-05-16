@@ -1,3 +1,9 @@
+# Welcome to BioTracs repository
+
+BioTracs website: https://bioaster.github.io/biotracs/
+
+![BioTracs framework](https://bioaster.github.io/biotracs/static/img/biotracs-framework.png)
+
 # Table of Contents
 * [What is BioTracs](#what-is-biotracs)
 * [Behind BioTracs](#behind-biotracs)
