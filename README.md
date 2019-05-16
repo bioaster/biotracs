@@ -1,12 +1,13 @@
-# Welcome to BioTracs repository
+# Welcome to BioTracs website repository
 
-BioTracs website: https://bioaster.github.io/biotracs/
+Official BioTracs Website: https://bioaster.github.io/biotracs/
 
 ![BioTracs framework](https://bioaster.github.io/biotracs/static/img/biotracs-framework.png)
 
 # Table of Contents
 * [What is BioTracs](#what-is-biotracs)
 * [Behind BioTracs](#behind-biotracs)
+* [BioTracs Repositories](#repo)
 * [Documentation](#doc)
 * [How to contribute?](#how-to-contribute)
 * [License](#license)
@@ -29,6 +30,12 @@ The key idea behind the BioTracs framework is to ultimately provide a community-
 BioTracs framework is based on the PRISM (Process-Resource Interfacing SysteM) architecture designed at BIOASTER [(Publication coming soon!)](https://). 
 The PRISM architecture was designed on the basis of the well-known MVC (model-view-controller) architecture (https://en.wikipedia.org/wiki/Model-view-controller). BioTracs is therefore MVC-oriented. 
 PRISM ambitions to provide an *agnostic* framework in which developers and end-users can concurrently contribute to the same applications while guaranteeing that what is implemented by the developers at the code level is what is delivered to the end-users with almost no supplementary effort.
+
+<a name="repo"/>
+
+# BioTracs repositories
+
+To access BioTracs repositories and upload the core framework and applications, please visite the official BioTracs website at https://bioaster.github.io/biotracs/. 
 
 <a name="doc"/>
 
