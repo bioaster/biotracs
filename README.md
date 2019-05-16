@@ -40,7 +40,7 @@ Please refer to the latest documentation at https://github.com/bioaster/biotracs
 
 # How to contribute?
 
-To contribute to the core project or to BioTracs applications, please refer to https://github.com/bioaster/biotracs
+To contribute to the core project or to BioTracs applications, please refer to the [contributing page](https://github.com/bioaster/biotracs/blob/master/CONTRIBUTING.md)
 
 <a name="license"/>
 
