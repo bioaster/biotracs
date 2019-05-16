@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>BioTracs Project</title>
+		<meta charset="utf-8"/>
+		<meta name="description" content="BioTracs project"/>
+		<meta name="keywords" content="BioTracs project"/>
+		
+		<script src="./static/lib/jquery-v3.2.1/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="./static/lib/jquery.touchSwipe.min.js" type="text/javascript"></script>
+		<script src="./static/lib/popper.min.js" type="text/javascript"></script>
+		<script src="./static/lib/bootstrap-v4.0/bootstrap.min.js" type="text/javascript"></script>
+		<script src="./static/lib/datatables.min.js" type="text/javascript"></script>
+		<script src="./static/lib/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+		<script src="./static/lib/d3.min.js" type="text/javascript"></script>
+		<script src="./static/lib/showdown-v2.0/showdown.min.js" type="text/javascript"></script>
+		<script src="./static/js/slidebar.js" type="text/javascript"></script>
+		<script src="./static/js/biotracs.js" type="text/javascript"></script>
+		
+		<link href="./static/lib/bootstrap-v4.0/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="./static/lib/datatables.min.css" rel="stylesheet" type="text/css"/>
+		<link href="./static/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+		<link href="./static/lib/highlight-v9.15.6/vs.css" rel="stylesheet" type="text/css"/>
+		<link href="./static/css/slidebar.css" rel="stylesheet" type="text/css"/>
+		<link href="./static/css/biotracs.css" rel="stylesheet" type="text/css"/>
+	</head>
+				
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-light bg-light justify-content-between">
+			<samp class="navbar-brand" href="#">[BioTracs]</samp>
+			<nav class="nav nav-pills">
+			  <form id="search-form" class="form-inline" action="https://google.com/search" method="get" target="_blank">
+				 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+				 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+			  <button id="slidebar-toggler" class="d-block navbar-toggler" type="button" style="margin-left: 50px">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			</nav>
+		</nav>
+		<script type="text/javascript">
+		  $("#search-form").submit(function(){
+			var input = $(this).find("input");
+			if(input.val() == ""){ return false; }; 
+			input.val( "biotracs: " + input.val() ); 
+			return true;
+		  })
+		</script>
+		<div class="container" style="margin-bottom: 0.5rem;">
+			<div style="font-size: 3rem; font-weight: 300; margin-top: 1rem; margin-bottom: 0.5rem;">
+				Welcome to the BioTracs project
+			</div>
+			<div class="lead">
+				The BioTracs project aims at providing an open community-driven analytics platform. It is an effort for standardizing the implementation and traceability of analytics workflows in bioinformatics. 
+			 </div>
+		</div>
+		<hr><br>
+		
+		<!-- Toc -->		
+		
+		<!-- Content -->
+		<div class="container">
+			<p>
+				BioTracs provides an hierarchical and modular environment where developers and non-expert users can model, implement, use and share their analytic workflows while ensuring <i>traceability</i> and <i>transparency</i> in their computational processes.
+				Initiated at BIOASTER, the BioTracs project is today open to the community in order to bring this architecture to the whole bioinformatics community. 
+			</p>
+			<p>
+				The key idea behind the BioTracs framework is to ultimately provide a community-driven analytics platform where computational processes are traceable, upgradable and easily sharable at the <i>code</i>, <i>application</i> and scientific <i>project</i> levels.
+			</p>
+			<br>
+			
+			<div class="card text-center">
+				<span>
+					<img style="max-width: 800px;" src="./static/img/biotracs-framework.png"></img>
+				</span>
+				<div class="card-body text-left">
+					<h5 class="card-title">BioTracs framework is based on the PRISM (Process-Resource Interfacing SysteM) architecture</h5>
+					<p  class="card-text">
+						The PRISM architecture was designed on the basis of the well-known <a href="https://en.wikipedia.org/wiki/Model-view-controller" target="_blank">MVC</a> (model-view-controller) architecture. BioTracs is therefore MVC-oriented. PRISM ambitions to provide an <i>agnostic</i> framework in which developers and end-users can concurrently contribute to the same applications while guaranteeing that what is implemented by the developers at the code level is what is delivered to the end-users with almost no supplementary effort.
+					</p>
+				</div>
+			</div>
+	
+			<br><br>
+			
+			<h3>GitHub repositories</h3>
+			
+			<p>
+				BioTracs framework and application are currently implemented in the MATLAB scientific language.
+			</p>
+			
+			<ul>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m" class="code-link">BioTracs</a><br>
+					Core framework
+				</li>
+				
+				<li> 
+					<a href="https://github.com/bioaster/biotracs-m-atlas" class="code-link">BioTracs-Atlas</a><br>
+					An application that provides modules for statistics and machine learning.
+					[<a class="popup" href="#" data-src="./static/img/biotracs-atlas.png" data-title="BioTracs-Atlas">view</a>]
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-docgen" class="code-link">BioTracs-DocGen</a><br>
+					Generation of BioTracs documentation
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-lipidmatch" class="code-link">BioTracs-LipidMatch</a><br>
+					An application for lipid identification using tandem mass spectrometry data. This application is based on the R-tool <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1744-3" target="_blank">LipidMatch</a>.
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-mimosa" class="code-link">BioTracs-Mimosa</a><br>
+					A mass spectrometry application for processing and analysis of metabolomics data.
+					[<a class="popup" href="#" data-src="./static/img/biotracs-mimosa.png" data-title="BioTracs-Mimosa">view</a>]
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-metadata" class="code-link">BioTracs-Metadata</a><br>
+					An application for the annotation of dataset using sample metadata tables.
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-mzconvert" class="code-link">BioTracs-MzConvert</a><br>
+					This application allows converting mass-spectrometry raw data to open file formats (mzXML, mzML, ...). It is based on the well-known software <a href="https://en.wikipedia.org/wiki/ProteoWizard" target="_blank">ProteoWizard</a>.
+				</li>
+				<li>
+					<a href="https://github.com/bioaster/biotracs-m-openms" class="code-link">BioTracs-OpenMS</a><br>
+					This application is a wrapper of some functionalities of the open-source software <a href="https://en.wikipedia.org/wiki/OpenMS" target="_blank">OpenMS</a> for feature extraction and peak annotation in mass-spectrometry.
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<h3>Publications</h3>
+			<br>
+			<ul>
+				<li>
+					J. Abi-Ghanem, K Hennig, D. A. Ouattara and F. Béquet, BioTracs-MIMOSA, Poster, 12th RFMF, Clermont-Ferrand, France.
+					[<a class="popup" href="#" data-src="./static/img/biotracs-mimosa.png" data-title="BioTracs-Mimosa">view</a>]
+				</li>
+				<li>
+					D. A. Ouattara and J. Abi-Ghanem, BioTracs-MIMOSA: A mass spectrometry application for processing and analysis of metabolomics data - Application to lipidomics, Workshop organized at the 12th RFMF, Clermont-Ferrand, France.
+				</li>
+			</ul>
+			
+			<br><br><br>
+			
+			<hr>
+			<div class="lead" style="padding:10px 0px">
+				Omics Hub, BIOASTER Research Institute
+			</div>
+		</div>
+		
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">View</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img id="modal-img" width="100%" src=""></img>
+				</div>
+			</div>
+		  </div>
+		</div>
+
+		<script>
+			$(document).ready( function(){
+				$(".popup").click(function(e){
+					e.stopPropagation();
+					var src = $(this).data("src");
+					$("#modal-img").prop("src",src);
+					$(".modal").modal("show");
+				})
+				
+				$(".table").DataTable();
+				options = {"position":"right", "toggler": "#slidebar-toggler"};
+				window.slidebar = new cogito.Slidebar( "slidebar-container", options );
+				$(window).resize(function(){
+					window.slidebar.resize();
+					$(".table-of-content").css({"height" : $(window).height()-20});
+				});
+				$(window).trigger("resize");
+			});
+		</script>
+	</body>
+</html>
