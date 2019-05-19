@@ -13,10 +13,12 @@
 		<script src="./static/lib/datatables.min.js" type="text/javascript"></script>
 		<script src="./static/lib/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
 		<script src="./static/lib/d3.min.js" type="text/javascript"></script>
+
 		<script src="./static/lib/showdown-v2.0/showdown.min.js" type="text/javascript"></script>
 		<script src="./static/js/slidebar.js" type="text/javascript"></script>
 		<script src="./static/js/biotracs.js" type="text/javascript"></script>
 		
+		<link href="./static/lib/fontawesome-5.8.2/css/all.min.css" rel="stylesheet" type="text/css"/>
 		<link href="./static/lib/bootstrap-v4.0/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<link href="./static/lib/datatables.min.css" rel="stylesheet" type="text/css"/>
 		<link href="./static/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
@@ -27,18 +29,34 @@
 				
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-light bg-light justify-content-between">
-			<samp class="navbar-brand" href="#">[BioTracs]</samp>
-			<nav class="nav nav-pills">
-			  <form id="search-form" class="form-inline" action="https://google.com/search" method="get" target="_blank">
-				 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
-				 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			  </form>
-			  <button id="slidebar-toggler" class="d-block navbar-toggler" type="button" style="margin-left: 50px">
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<samp><a class="navbar-brand" href="#">[BioTracs]</a></samp>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-			  </button>
-			</nav>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#github">GitHub</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#downloads">Downloads</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Support</a>
+					</li>
+				</ul>
+				<span class="navbar-text">
+					<form id="search-form" class="form-inline" action="https://google.com/search" method="get" target="_blank">
+						 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+						 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</span>
+			</div>
 		</nav>
+
 		<script type="text/javascript">
 		  $("#search-form").submit(function(){
 			var input = $(this).find("input");
@@ -83,10 +101,10 @@
 			</div>
 	
 			<br><br>
+
+			<h3 id="github">Get sources on GitHub</h3><hr>
 			
-			<h3>GitHub</h3><hr>
-			
-			BioTracs framework and applications are currently implemented in the MATLAB scientific language. Python implementations are planed.
+			BioTracs framework and applications are currently implemented in the MATLAB scientific language. Python implementations are planed. To use MATLAB sources or contribute to the project, please download source codes on GitHub repositories.
 			
 			<br><br>
 			
@@ -94,48 +112,75 @@
 			
 			<ul>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m" class="code-link">biotracs-m</a><br>
-					Core framework
+					Core framework source
 				</li>
 				
 				<li> 
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-atlas" class="code-link">biotracs-m-atlas</a><br>
-					An application that provides modules for statistics and machine learning.
-					[<a class="popup" href="#" data-src="./static/img/biotracs-atlas.png">view</a>]
+					Application that provides modules for statistics and machine learning.
+					[<a class="popup" href="#" data-src="./static/img/biotracs-m-atlas.png">view</a>]
 				</li>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-docgen" class="code-link">bioTracs-m-docgen</a><br>
 					Generation of BioTracs documentation
 				</li>
 				<li>
 					<a href="https://github.com/bioaster/biotracs-m-lipidmatch" class="code-link">biotracs-m-lipidmatch</a><br>
-					An application for lipid identification using tandem mass spectrometry data. This application is based on the R-tool <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1744-3" target="_blank">LipidMatch</a>.
+					Application for lipid identification using tandem mass spectrometry data. This application is based on the R-tool <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1744-3" target="_blank">LipidMatch</a>.
 				</li>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-mimosa" class="code-link">biotracs-m-mimosa</a><br>
-					A mass spectrometry application for processing and analysis of metabolomics data.
+					Mass spectrometry application for processing and analysis of metabolomics data.
 					[<a class="popup" href="#" data-src="./static/img/biotracs-m-mimosa.png">view</a>]
 				</li>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-metadata" class="code-link">biotracs-m-metadata</a><br>
-					An application for the annotation of dataset using sample metadata tables.
+					Application for the annotation of dataset using sample metadata tables.
 				</li>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-mzconvert" class="code-link">biotracs-m-mzconvert</a><br>
-					This application allows converting mass-spectrometry raw data to open file formats (mzXML, mzML, ...). It is based on the well-known software <a href="https://en.wikipedia.org/wiki/ProteoWizard" target="_blank">ProteoWizard</a>.
+					Application for converting mass-spectrometry raw data to open file formats (mzXML, mzML, ...). Based on the well-known software <a href="https://en.wikipedia.org/wiki/ProteoWizard" target="_blank">ProteoWizard</a>.
 				</li>
 				<li>
+					<i class="fab fa-github"></i>
 					<a href="https://github.com/bioaster/biotracs-m-openms" class="code-link">biotracs-m-openms</a><br>
-					This application is a wrapper of some functionalities of the open-source software <a href="https://en.wikipedia.org/wiki/OpenMS" target="_blank">OpenMS</a> for feature extraction and peak annotation in mass-spectrometry.
+					Wrapper application of the open-source software <a href="https://en.wikipedia.org/wiki/OpenMS" target="_blank">OpenMS</a> for feature extraction and peak annotation in mass-spectrometry.
 				</li>
 			</ul>
 			
 			<br>
 			
 			<h5>Python libraries</h5>
-			<p>
+			<div>
 				Coming soon!
-			</p>
+			</div>
+			
+			<br><br>
+			
+			<h3 id="downloads">Get standalone apps</h3><hr>
+			
+			You are not a coder and want to get experience with BioTracs applications? Download standalone applications without needing MATLAB installed.<br><br>
+			
+			<ul>
+				<li>
+					<i class="fas fa-file-download"></i>
+					<a href="#" class="code-link">BioTracs-Mimosa application</a><br>
+					Standalone mass spectrometry application for processing and analysis of metabolomics data [<i style="color:red">Coming soon!</i>].
+				</li>
+			</ul>
+			
+			<br><br>
+			
+			<h3 id="contact">Get support</h3><hr>
+			
+			To get help and support on BioTracs applications and libraries, please <a href="mailto:biotracs@bioaster.org" class="code-link">Contact us</a>.
 			
 			<br><br>
 			
@@ -145,7 +190,7 @@
 			<ul>
 				<li>
 					J. Abi-Ghanem, K Hennig, D. A. Ouattara and F. Béquet, BioTracs-MIMOSA, Poster, 12th RFMF, Clermont-Ferrand, France.
-					[<a class="popup" href="#" data-src="./static/img/biotracs-mimosa.png" data-title="BioTracs-Mimosa">view</a>]
+					[<a class="popup" href="#" data-src="./static/img/biotracs-m-mimosa.png" data-title="BioTracs-Mimosa">view</a>]
 				</li>
 				<li>
 					D. A. Ouattara and J. Abi-Ghanem, BioTracs-MIMOSA: A mass spectrometry application for processing and analysis of metabolomics data - Application to lipidomics, Workshop organized at the 12th RFMF, Clermont-Ferrand, France.
@@ -160,6 +205,7 @@
 			</div>
 		</div>
 		
+
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -179,6 +225,7 @@
 		<script>
 			$(document).ready( function(){
 				$(".popup").click(function(e){
+					e.preventDefault();
 					e.stopPropagation();
 					var src = $(this).data("src");
 					$("#modal-img").prop("src",src);
