@@ -1,6 +1,6 @@
 # Welcome to BioTracs website repository
 
-Official BioTracs Website: https://bioaster.github.io/biotracs/
+Visite the official BioTracs website: https://bioaster.github.io/biotracs/
 
 ![BioTracs framework](https://bioaster.github.io/biotracs/static/img/biotracs-framework.png)
 
